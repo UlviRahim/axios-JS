@@ -3,13 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:wght@100..700&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Wine Project</title>
+  </head>
+
+  <body>
+    <header id="site-header">
+      <div class="header-wrap">
+        <div class="brand">
+          <img src="./assets/images/logo (1).png" alt="logo" />
+        </div>
+
+        <div class="menu-area">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Wines</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="menu-icon">
+            <i class="fa-solid fa-list"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-text">
+          <p>Royal Wine</p>
+          <h1>Grape Wine</h1>
+        </div>
+      </section>
+
+      <section class="product-area"></section>
+
+      <section id="intro">
+        <div class="intro-text">
+          <p>Welcome</p>
+          <h1>Wines For<br />Everyone</h1>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="testimonial-wrap">
+          <div class="testimonial-list">
+            <div class="testimonial-card">
+              <div class="avatar">
+                <img src="./assets/images/person_1.jpg" alt="" />
+              </div>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero sapiente beatae nemo quasi."
+              </p>
+              <span class="author">— Cillin Miller</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="avatar">
+                <img src="./assets/images/person_2.jpg" alt="" />
+              </div>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero sapiente beatae nemo quasi."
+              </p>
+              <span class="author">— Cillin Miller</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="avatar">
+                <img src="./assets/images/person_3.jpg" alt="" />
+              </div>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero sapiente beatae nemo quasi."
+              </p>
+              <span class="author">— Levi Morris</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="blog-wrap">
+          <div class="blog-head">
+            <h1>Wine’s Blog</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <span class="blog-link">View All Products →</span>
+          </div>
+
+          <div class="blog-cards">
+            <div class="blog-card">
+              <img src="assets/images/img_1.jpg" alt="" />
+              <h2>What You Need To Know About Premium Prosecco</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <span>Dave Rogers <em>in</em> News</span>
+            </div>
+
+            <div class="blog-card">
+              <img src="assets/images/img_2.jpg" alt="" />
+              <h2>What You Need To Know About Premium Prosecco</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <span>Dave Rogers <em>in</em> News</span>
+            </div>
+
+            <div class="blog-card">
+              <img src="assets/images/img_3.jpg" alt="" />
+              <h2>What You Need To Know About Premium Prosecco</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <span>Dave Rogers <em>in</em> News</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer">
+      <div class="footer-wrap">
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <p>
+          Copyright ©2025 All rights reserved | Made with
+          <i class="fa-solid fa-heart"></i> by
+          <span class="brand-name">Colorlib</span>
+        </p>
+      </div>
+    </footer>
+
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
   </body>
 </html>

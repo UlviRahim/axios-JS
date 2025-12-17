@@ -4,32 +4,283 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 80%;
+#site-header {
+  width: 100%;
+}
+#site-header .header-wrap {
+  width: 70%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+#site-header .header-wrap .brand {
+  margin-top: 13px;
+  width: 150px;
+}
+#site-header .header-wrap .brand img {
+  width: 100%;
+}
+#site-header .header-wrap .menu-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#site-header .header-wrap .menu-area .main-nav ul {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+#site-header .header-wrap .menu-area .main-nav ul a {
+  font-family: "Cinzel", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+#site-header .header-wrap .menu-area .main-nav ul .active {
+  color: blueviolet;
+}
+#site-header .header-wrap .menu-area .menu-icon {
+  display: none;
+}
+
+#hero {
+  width: 100%;
+}
+#hero .hero-text {
+  background-image: url(/assets/images/hero_2.jpg);
+  background-size: cover;
+  width: 60%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  color: white;
+  filter: contrast(80%);
+}
+#hero .hero-text p {
+  font-size: 17px;
+  font-family: "Cinzel", sans-serif;
+}
+#hero .hero-text h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-area {
+  width: 80%;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
 }
-.container .product-card {
+.product-area .product-card {
   width: 30%;
   padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
-  border: 1px solid gray;
+  gap: 20px;
+  border: 1px solid grey;
   border-radius: 20px;
 }
-.container .product-card_btn {
-  width: 50%;
-  border: 0;
-  background-color: pink;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.container .product-card img {
+.product-area .product-card img {
   width: 200px;
   height: 200px;
+}
+.product-area .product-card .btn {
+  width: 50%;
+  border: none;
+  background: gray;
+  border-radius: 20px;
+}
+
+#intro {
+  width: 100%;
+  margin: 40px 0;
+}
+#intro .intro-text {
+  background-image: url(/assets/images/hero_2.jpg);
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  color: white;
+}
+#intro .intro-text p {
+  font-size: 20px;
+  font-family: "Cinzel", sans-serif;
+}
+#intro .intro-text h1 {
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#testimonials {
+  margin-bottom: 33px;
+}
+#testimonials .testimonial-list {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+#testimonials .testimonial-list .testimonial-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#testimonials .testimonial-list .testimonial-card p {
+  color: grey;
+  font-size: 13px;
+  font-family: "Cinzel", sans-serif;
+}
+#testimonials .testimonial-list .testimonial-card .author {
+  font-size: 10px;
+  font-family: "Cinzel", sans-serif;
+  color: blueviolet;
+}
+#testimonials .testimonial-list .testimonial-card .avatar img {
+  width: 20%;
+  border: 3px solid darkorchid;
+  border-radius: 50%;
+}
+
+#blog {
+  background: #f8f9fa;
+  margin-bottom: 22px;
+}
+#blog .blog-wrap .blog-head {
+  text-align: center;
+  margin: 25px 0 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#blog .blog-wrap .blog-head h1 {
+  font-family: "Cinzel", sans-serif;
+  font-size: 22px;
+}
+#blog .blog-wrap .blog-head p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+#blog .blog-wrap .blog-head .blog-link {
+  font-size: 13px;
+  color: darkorchid;
+}
+#blog .blog-wrap .blog-cards {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+#blog .blog-wrap .blog-cards .blog-card {
+  width: 33%;
+}
+#blog .blog-wrap .blog-cards .blog-card img {
+  width: 95%;
+}
+#blog .blog-wrap .blog-cards .blog-card h2 {
+  font-size: 13px;
+  margin-top: 12px;
+  font-family: "Cinzel", sans-serif;
+}
+#blog .blog-wrap .blog-cards .blog-card p {
+  font-size: 13px;
+  margin: 12px 0;
+  color: gray;
+}
+#blog .blog-wrap .blog-cards .blog-card span {
+  font-size: 10px;
+}
+
+#site-footer {
+  padding: 40px;
+  text-align: center;
+}
+#site-footer .socials {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#site-footer .socials i {
+  border: 2px solid darkorchid;
+  border-radius: 50%;
+  background: darkorchid;
+  color: white;
+  cursor: pointer;
+}
+#site-footer .socials i:hover {
+  background: black;
+}
+
+@media (min-width: 576px) and (max-width: 778px) {
+  #header .head .nav nav ul {
+    display: none;
+  }
+  #header .head .icon {
+    display: block;
+  }
+  .products {
+    flex-direction: column;
+  }
+  .products .product-card {
+    width: 90%;
+  }
+  #blank .cards {
+    flex-wrap: wrap;
+  }
+  #blank .cards .card {
+    width: 45%;
+  }
+  #blog .cards {
+    flex-wrap: wrap;
+  }
+  #blog .cards .card {
+    width: 45%;
+  }
+}
+@media (min-width: 778px) and (max-width: 991px) {
+  #header .head .nav nav ul {
+    display: none;
+  }
+  #header .head .icon {
+    display: block;
+  }
+  .products {
+    justify-content: space-between;
+  }
+  .products .product-card {
+    width: 45%;
+  }
+  #blank .cards .card {
+    width: 45%;
+  }
+  #blog .cards .card {
+    width: 45%;
+  }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+  #header .head {
+    width: 80%;
+  }
+  .products .product-card {
+    width: 32%;
+  }
+  #blank .cards .card {
+    width: 32%;
+  }
+  #blog .cards .card {
+    width: 32%;
+  }
 }

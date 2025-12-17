@@ -1,24 +1,19 @@
-const container = document.querySelector(".container");
-//axios
-async function getProductsByAxios() {
-  const endpoint = "https://fakestoreapi.com/products";
+const products = document.querySelector(".products");
+async function com() {
+  const endpoint = "https://dummyjson.com/products";
   const res = await axios(endpoint);
-  const data = await res.data;
+  const data = res.data.products;
   data.forEach((element) => {
     const card = document.createElement("div");
-    card.classList = "product-card";
+    card.className = "product-card";
     card.innerHTML = `
-                    <img src="${element.image}" alt="">
-                    <p>${element.title}</p>
-                    <p>${
-                      element.description.length > 20
-                        ? element.description.slice(0, 20) + "..."
-                        : element.description
-                    }</p>
-                    <span>${element.price}</span>
-                    <button class="product-card_btn">Buy</button>
-                    `;
-    container.appendChild(card);
+        <img src="${element.thumbnail}" alt="">
+      <h3>${element.title}</h3>
+      <p>${element.description}</p>
+      <span>$${element.price}</span>
+
+        `;
+    products.appendChild(card);
   });
 }
-window.onload = () => getProductsByAxios();
+window.onload = com;
